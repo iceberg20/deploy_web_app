@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quiz educativo sobre o Instituto Federal do Rio Grande do Norte (IFRN).">
+  <title>Quiz IFRN | Teste seus conhecimentos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <a class="marca" href="#inicio" aria-label="Página inicial do Quiz IFRN"><span class="marca-icone">IF</span><span>Quiz <strong>IFRN</strong></span></a>
+    <a class="link-oficial" href="https://portal.ifrn.edu.br/" target="_blank" rel="noopener noreferrer">Portal oficial ↗</a>
+  </header>
+
+  <main id="inicio" class="container">
+    <section class="hero" aria-labelledby="titulo">
+      <div class="etiqueta">🎓 Desafio de conhecimentos</div>
+      <h1 id="titulo">Quanto você sabe sobre o <span>IFRN?</span></h1>
+      <p>Responda a 10 perguntas sobre o Instituto Federal do Rio Grande do Norte, seus cursos, sua atuação e a educação pública.</p>
+      <div class="estatisticas"><span>📝 10 questões</span><span>⏱️ Sem limite de tempo</span><span>🏆 Resultado imediato</span></div>
+    </section>
+
+    <section id="boas-vindas" class="painel" aria-labelledby="boas-vindas-titulo">
+      <h2 id="boas-vindas-titulo">Pronto para começar?</h2>
+      <p>Escolha uma alternativa em cada questão. Ao responder, você verá se acertou e poderá avançar.</p>
+      <button id="comecar" class="botao" type="button">Começar quiz →</button>
+    </section>
+
+    <section id="quiz" class="painel oculto" aria-labelledby="pergunta-titulo">
+      <div class="quiz-topo"><span id="contador">Pergunta 1 de 10</span><span id="pontuacao">0 pontos</span></div>
+      <div class="trilha" role="progressbar" aria-label="Progresso do quiz" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><div id="barra"></div></div>
+      <p id="categoria" class="categoria"></p>
+      <h2 id="pergunta-titulo"></h2>
+      <div id="opcoes" class="opcoes" role="group" aria-labelledby="pergunta-titulo"></div>
+      <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+      <button id="proxima" class="botao oculto" type="button">Próxima pergunta →</button>
+    </section>
+
+    <section id="resultado" class="painel resultado oculto" aria-labelledby="resultado-titulo">
+      <div class="trofeu" aria-hidden="true">🏆</div>
+      <h2 id="resultado-titulo">Quiz concluído!</h2>
+      <p id="mensagem-final"></p>
+      <div id="placar-final" class="placar-final" aria-live="polite"></div>
+      <button id="reiniciar" class="botao" type="button">Refazer quiz ↻</button>
+    </section>
+  </main>
+  <footer>Projeto educativo demonstrativo • Não é uma página oficial do IFRN.</footer>
+</body>
+</html>
